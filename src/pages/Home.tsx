@@ -192,9 +192,9 @@ function AIFeature() {
           <button 
             onClick={handleGenerate}
             disabled={loading || !prompt}
-            className="absolute right-2 top-2 bottom-2 w-10 bg-brand text-white rounded-xl flex items-center justify-center hover:bg-orange-500 transition-colors disabled:opacity-50"
+            className="absolute right-2 top-2 bottom-2 w-12 bg-brand text-white rounded-xl flex items-center justify-center hover:bg-orange-500 active:scale-90 transition-all disabled:opacity-50 shadow-lg"
           >
-            <Send size={16} />
+            <Send size={18} />
           </button>
         </div>
       </div>
