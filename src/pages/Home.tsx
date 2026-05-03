@@ -13,8 +13,8 @@ export default function Home({ user }: HomeProps) {
   return (
     <main className="w-full">
       {/* Hero Section */}
-      <section className="h-screen flex flex-col justify-center px-6 md:px-20 relative">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl aspect-square bg-brand/5 rounded-full blur-[120px] pointer-events-none" />
+      <section className="h-screen flex flex-col justify-center px-6 md:px-20 relative overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl aspect-square bg-brand/5 rounded-full blur-[80px] md:blur-[120px] pointer-events-none" />
         
         <motion.div
            initial={{ opacity: 0, y: 100 }}
@@ -22,10 +22,10 @@ export default function Home({ user }: HomeProps) {
            transition={{ duration: 1.2, ease: [0.23, 1, 0.32, 1] }}
            className="relative z-10"
         >
-          <span className="text-brand font-mono text-sm uppercase tracking-[0.4em] mb-6 block">
+          <span className="text-brand font-mono text-xs md:text-sm uppercase tracking-[0.4em] mb-6 block">
             Digital Excellence / 2026
           </span>
-          <h1 className="text-[12vw] md:text-[10vw] font-display font-black leading-[0.85] tracking-tight uppercase rejouice-text">
+          <h1 className="text-[14vw] md:text-[10vw] font-display font-black leading-[0.85] tracking-tight uppercase rejouice-text">
             Ignite<br />
             Your<br />
             <span className="text-brand italic font-light lowercase font-sans">Vision.</span>
@@ -36,15 +36,15 @@ export default function Home({ user }: HomeProps) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 1 }}
-          className="absolute bottom-12 right-20 text-xs font-mono uppercase tracking-widest text-white/40"
+          className="absolute bottom-12 left-6 md:right-20 md:left-auto text-[10px] md:text-xs font-mono uppercase tracking-widest text-white/40"
         >
-          Scroll to Explore / 2026
+          Scroll to Explore
         </motion.div>
       </section>
 
       {/* AI Section */}
-      <section className="min-h-screen py-40 px-6 md:px-20 bg-white text-black rounded-t-[40px] md:rounded-t-[80px]">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
+      <section className="min-h-screen py-20 md:py-40 px-6 md:px-20 bg-white text-black rounded-t-[40px] md:rounded-t-[80px]">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-start">
           <div>
             <motion.span 
               initial={{ opacity: 0, x: -20 }}
@@ -53,10 +53,10 @@ export default function Home({ user }: HomeProps) {
             >
               Intelligence / Studio
             </motion.span>
-            <h2 className="text-5xl md:text-7xl font-display font-medium tracking-tighter leading-none mb-10">
+            <h2 className="text-4xl md:text-7xl font-display font-medium tracking-tighter leading-tight md:leading-none mb-10">
               The Flame of<br /> Intelligence.
             </h2>
-            <p className="text-lg md:text-xl text-black/60 max-w-md leading-relaxed">
+            <p className="text-base md:text-xl text-black/60 max-w-md leading-relaxed">
               We combine cutting-edge AI models with high-end motion design to create digital products that don't just work—they inspire.
             </p>
           </div>
@@ -68,9 +68,9 @@ export default function Home({ user }: HomeProps) {
       </section>
 
       {/* Footer-like section */}
-      <section className="bg-white text-black py-20 px-6 border-t border-black/5">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-end gap-10">
-            <div className="text-[15vw] font-display font-black tracking-tighter leading-[0.75] uppercase text-black/5">
+      <section className="bg-white text-black py-20 px-6 border-t border-black/5 overflow-hidden">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-end gap-12 md:gap-10">
+            <div className="text-[20vw] md:text-[15vw] font-display font-black tracking-tighter leading-[0.75] uppercase text-black/5 select-none">
                 Flame.
             </div>
             <div className="flex flex-col items-end gap-4">

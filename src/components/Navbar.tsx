@@ -19,18 +19,18 @@ export default function Navbar({ user, onLogout }: NavbarProps) {
         FLAMEWORK<span className="text-brand">.</span>
       </Link>
 
-      <div className="flex items-center gap-8">
-        <motion.div whileHover={{ y: -2, scale: 1.05 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
+      <div className="flex items-center gap-4 md:gap-8">
+        <motion.div whileHover={{ y: -2, scale: 1.05 }} transition={{ type: "spring", stiffness: 400, damping: 10 }} className="hidden sm:block">
           <Link to="/" className="text-sm uppercase tracking-widest font-medium hover:text-brand transition-colors block py-2">
             Work
           </Link>
         </motion.div>
-        <motion.div whileHover={{ y: -2, scale: 1.05 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
+        <motion.div whileHover={{ y: -2, scale: 1.05 }} transition={{ type: "spring", stiffness: 400, damping: 10 }} className="hidden sm:block">
           <Link to="/" className="text-sm uppercase tracking-widest font-medium hover:text-brand transition-colors block py-2">
             Services
           </Link>
         </motion.div>
-        <motion.div whileHover={{ y: -2, scale: 1.05 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
+        <motion.div whileHover={{ y: -2, scale: 1.05 }} transition={{ type: "spring", stiffness: 400, damping: 10 }} className="hidden sm:block">
           <Link to="/" className="text-sm uppercase tracking-widest font-medium hover:text-brand transition-colors block py-2">
             Studio
           </Link>
